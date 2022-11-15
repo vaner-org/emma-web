@@ -1,29 +1,98 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<title>Emma Lee Benson</title>
-	  <link rel="stylesheet" href="styles.css">
-	</head>
-	  
-
+<head>
+	<title>Emma Lee Benson</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
+	<script type="text/javascript" src="script.js"></script>
 	
-	<body>
-		<h1><img src="assets/Title.png" alt="Emma Benson" title="Emma Benson" width=100%></h1>
-		<p>Welcome to Emma's website.</p>
-		<hr>
-		<h2><img src="assets/About.png" alt="About" title="About"></h2>
-		<p>A little more about Emma.</p>
-		<hr>
-		<h2><img src="assets/Works.png" alt="Works" title="Works"></h2>
-		<p>See some of the artwork Emma has made.</p>
-		<hr>
-		<h2><img src="assets/Film.png" alt="Film" title="Film"></h2>
-		<p>Check out Emma's film work.</p>
-		<hr>
-		<h2><a href="https://en.wikipedia.org/wiki/Resume"><img src="assets/Resume.png" alt="Resume" title="Resume"></a></h2>
-		<p>Download a copy of Emma's resume.</p>
-		<hr>
-		<h2><img src="assets/Contact.png" alt="Contact" title="Contact"></h2>
+</head>
+
+<body>
+    
+	<div class="row">
+		<div class="tabs">
+			<div class="item">
+				<img class="item" src="assets/Title.png"/>
+			</div>
+			
+			<div class="item">
+				<button class="tablink" onclick="openPage('About', this, 'white')" id="defaultOpen"><img src="assets/About.png" alt="About" title="About"></button>
+			</div>
+			
+			<div class="item">
+				<button class="tablink" onclick="openPage('Works', this, 'white')"><img src="assets/Works.png" alt="Works" title="Works"></button>
+
+			</div>
+			
+			<div class="item">
+				<button class="tablink" onclick="openPage('Film', this, 'white')"><img src="assets/Film.png" alt="Film" title="Film"></button>
+			</div>
+			
+			<div class="item">
+				<button class="tablink" onclick="openPage('Resume', this, 'white')"><img src="assets/Resume.png" alt="Resume" title="Resume"></button>
+			</div>
+			
+			<div class="item">
+				<button class="tablink" onclick="openPage('Contact', this, 'white')"><img src="assets/Contact.png" alt="Contact" title="Contact"></button>
+			</div>
+		</div>	
+	</div>
+	
+	<div id="About" class="tabcontent">
+		<p>Emma Lee Benson is an artist from <b>Los Angeles</b>.</p>
+	</div>
+	
+	<div id="Works" class="tabcontent">
+		<p><b><em>Our Love Forever</em></b> (2021)<br>
+			<!-- A story from reddit immortalized by Emma Benson<br> -->
+			(sharpie on wall)
+		</p>
+		<div class="gallery-container">
+		<div class="slides">
+			<div><img src="assets/works/ourloveforever/1.jpg"></div>
+			<div><img src="assets/works/ourloveforever/2.jpg"></div>
+			<div><img src="assets/works/ourloveforever/3.jpg"></div>
+			<div><img src="assets/works/ourloveforever/4.jpg"></div>
+			<div><img src="assets/works/ourloveforever/5.jpg"></div>
+			<div><img src="assets/works/ourloveforever/6.jpg"></div>
+			<div><img src="assets/works/ourloveforever/7.jpg"></div>
+			<div><img src="assets/works/ourloveforever/8.jpg"></div>
+			<div><img src="assets/works/ourloveforever/9.jpg"></div>
+		</div>
+		</div>
+	</div>
+	
+	<div id="Film" class="tabcontent">
+		<p><b><em><a href="https://vimeo.com/658055676">Into The Dog House</a></em></b> (2021)</p>
+		<iframe src="https://player.vimeo.com/video/658055676?h=f184104f63" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		<p><b><em><a href="https://vimeo.com/557622429">Nosemilk</a></em></b> (2021)</p>
+		<iframe src="https://player.vimeo.com/video/557622429?h=22f4ad8a45" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		<p><b><em><a href="https://vimeo.com/500686076">Animation Reel</a></em></b> (2021)</p>
+		<iframe src="https://player.vimeo.com/video/500686076?h=64b59b469e" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		
+		<!-- <br>
+		<br>
+		<iframe title="vimeo-player" src="https://player.vimeo.com/video/486633975?h=3f2bb94af1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+		<iframe title="vimeo-player" src="https://player.vimeo.com/video/471264779?h=c83de8ca61" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+		<iframe title="vimeo-player" src="https://player.vimeo.com/video/403488483?h=cc29f64686" width="640" height="360" frameborder="0" allowfullscreen></iframe> -->
+	</div>
+	
+	<div id="Resume" class="tabcontent">
+		<p><a href="assets/resume.pdf" download>Download</a> a copy of Emma's resume.</p>
+		<!-- <iframe src="assets/resume.pdf" frameborder="0" scrolling="no"> -->
+		<iframe class="pdf" src="assets/resume.pdf#view=fit" frameborder="0"></iframe>
+	</div>
+	
+	<div id="Contact" class="tabcontent">
 		<p>Reach out to Emma.</p>
-	</body>
+		<p><a href="mailto:emmabenson@alum.calarts.edu">Email</a>
+		<p><a href="https://www.instagram.com/tweakinrage/">Instagram</a>
+		<p><a href="https://vimeo.com/user75459127">Vimeo</a>
+
+
+	</div>
+	
+</body>
+
 </html>
