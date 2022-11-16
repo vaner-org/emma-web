@@ -1,21 +1,4 @@
 body {
-  
-}
-
-/* Simple dark mode implementation
-
-@media (prefers-color-scheme: dark) {
-  html {
-    filter: invert(100%);
-  }
-}
-@media (prefers-color-scheme: light) {
-  html {
-  }
-}
-*/
-
-body {
 	background-color: #F2B6C1;
 	font-family: serif;
 }
@@ -25,46 +8,82 @@ p {
 	line-height: 120%;
 }
 
+/*
+@media (prefers-color-scheme: dark) {
+	.tabs img {
+		filter: invert(100%);
+	}
+	body {
+  		background-color: #000000
+	}
+}
+@media (prefers-color-scheme: light) {
+  html {
+  }
+}
+*/
+
+/* Navigation bar */
+
 .row {
 	display: table;
 	border-collapse: collapse;
 	width: 100%;
 }
+.item-title {
+	display: table-cell;
+	vertical-align: middle;
+}
+
 .item {
 	display: table-cell;
 	vertical-align: middle;
 }
 .item img {
-	display: block;
 	width: 100%;
-	height: auto;
 }
+
+.title {
+	display: table-cell;
+	vertical-align: middle;
+}
+.title img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.title {
+		display: block;
+		vertical-align: middle;
+	}
+}
+
 
 .portrait img {
 	height: 80vh;
 	border-radius: 200px;
 }
 
-/* Style tab links */
+/* Tab links */
+
 .tablink {
 	background-color: transparent;
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 10px 10px;
-	border-radius: 25px;
-  
+	padding: 5% 5%;
+	border-radius: 20px;
 }
 
 .tablink:hover {
-  background-color: #F9DBE0;
-  border-radius: 25px;
+	background-color: #F9DBE0;
+	border-radius: 20px;
 }
 
 .tabcontent {
-  display: none;
-  padding: 10px 20px;
-  height: 100%;
+	display: none;
+	padding: 10px 20px;
+	height: 100%;
 }
 
 .pdf {
@@ -73,38 +92,35 @@ p {
 }
 
 
-
-
-
-
+/* Sliding gallery */
 
 .gallery-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
 
 .slides {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 0.5rem;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 0.5rem;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
 }
 
 .slides > div {
-  scroll-snap-align: start;
+	scroll-snap-align: start;
 }
 
 .slides img {
-  width: 800px;
-  object-fit: contain;
+	width: 800px;
+	object-fit: contain;
 }
 
 .slides::-webkit-scrollbar {
-  display: none;
+	display: none;
 }

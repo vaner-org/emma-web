@@ -53,7 +53,7 @@ function openPage(pageName, elmnt, color) {
 
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
-  elmnt.style.borderRadius = "25px";
+  elmnt.style.borderRadius = "20px";
 }
 
 // Get the element with id="defaultOpen" and click on it
