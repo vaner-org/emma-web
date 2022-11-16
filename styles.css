@@ -40,7 +40,9 @@ p {
 	vertical-align: middle;
 }
 .item img {
+	display: block;
 	width: 100%;
+	height: auto;
 }
 
 .title {
@@ -48,7 +50,9 @@ p {
 	vertical-align: middle;
 }
 .title img {
+	display: block;
 	width: 100%;
+	height: auto;
 }
 
 @media only screen and (max-width: 600px) {
