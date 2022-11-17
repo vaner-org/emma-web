@@ -1,6 +1,6 @@
 body {
 	background-color: #F2B6C1;
-	font-family: serif;
+	font-family: 'EB Garamond', serif;
 }
 
 p {
@@ -45,22 +45,12 @@ p {
 	height: auto;
 }
 
-.title {
-	display: table-cell;
-	vertical-align: middle;
-}
-.title img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
 @media only screen and (max-width: 600px) {
-	.title {
+	#title {
 		display: block;
 		vertical-align: middle;
 	}
-	.title img {
+	#title img {
 		display: block;
 		width: 100%;
 		height: auto;
@@ -68,11 +58,11 @@ p {
 }
 
 @media only screen and (min-width: 600px) {
-	.title {
+	#title {
 		display: table-cell;
 		vertical-align: middle;
 	}
-	.title img {
+	#title img {
 		display: block;
 		width: 100%;
 		height: auto;
@@ -92,7 +82,10 @@ p {
 	outline: none;
 	cursor: pointer;
 	padding: 5% 5%;
-	border-radius: 20px;
+}
+
+.tablink#home {
+	padding: 0% 0%;
 }
 
 .tablink:hover {
