@@ -40,31 +40,19 @@ function openPage(pageName, elmnt, color) {
 		tabcontent[i].style.display = "none";
 	}
 	
-	// Remove the background color of all tablinks/buttons
-	tablinks = document.getElementsByClassName("tablink");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].style.backgroundColor = "";
-	}
-	
 	// Show the specific tab content
 	document.getElementById(pageName).style.display = "block";
-
-	// Add the specific color to the button used to open the tab content
-	// elmnt.style.backgroundColor = color;
-	// elmnt.style.borderRadius = "20px";
 	
-	
+	// Hide all underlines
 	underline = document.getElementsByClassName("underline");
 	for (i = 0; i < underline.length; i++) {
 		underline[i].style.opacity = "0";
 	}
 	
+	// Show selected underline
 	underline = elmnt.getElementsByClassName("underline");
 	
 	for (i = 0; i < underline.length; i++) {
 		underline[i].style.opacity = "1";
 	}
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
