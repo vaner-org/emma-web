@@ -82,7 +82,6 @@ p {
 
 .portrait img {
 	height: 80vh;
-	border-radius: 200px;
 }
 
 /* Tab links */
@@ -97,7 +96,7 @@ p {
 }
 
 .tablink:hover {
-	background-color: #F9DBE0;
+	background-color: #F7D9DE;
 	border-radius: 20px;
 }
 
@@ -140,6 +139,11 @@ p {
 .slides img {
 	width: 800px;
 	object-fit: contain;
+}
+
+.underline {
+	display: inline-block;
+	opacity: 0;
 }
 
 .slides::-webkit-scrollbar {
