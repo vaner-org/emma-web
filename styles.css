@@ -160,7 +160,3 @@ p {
 .slides::-webkit-scrollbar {
 	display: none;
 }
-
-.Film iframe {
-	max-width: 80vw;
-}
