@@ -83,7 +83,11 @@ p {
 	}
 }
 
-/* Tab links */
+#portrait img {
+	float: left;
+	height: 80vh;
+	padding: 0% 2%;
+}
 
 .tabs {
 	padding: 0px 12px;
@@ -176,8 +180,7 @@ p {
 }
 
 .slides img {
-	height: auto;
-	width: 55vw;
+	width: 800px;
 	object-fit: contain;
 }
 
