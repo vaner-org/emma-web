@@ -56,3 +56,6 @@ function openPage(pageName, elmnt, color) {
 		underline[i].style.opacity = "1";
 	}
 }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("home").click();

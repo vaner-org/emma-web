@@ -4,19 +4,19 @@ a {
 }
 
 body {
-	background-color: #F2B6C1;
+	background-color: #FCB3C0;
 	font-family: 'EB Garamond', serif;
+	padding: 0px 0px;
+	margin: 0;
 }
 
 h2 {
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 p {
 	margin-top: 0;
 	font-size: 18px;
-/*	line-height: 120%;*/
 }
 
 /*
@@ -35,6 +35,7 @@ p {
 */
 
 /* Navigation bar */
+
 
 .row {
 	display: table;
@@ -55,6 +56,8 @@ p {
 	width: 100%;
 	height: auto;
 }
+
+/* Responsive setup */
 
 @media only screen and (max-width: 600px) {
 	#title {
@@ -80,19 +83,11 @@ p {
 	}
 }
 
-
-#portrait img {
-	margin: auto;
-	float: left;
-	height: 70vh;
-	width: auto;
-	max-width: 100vw;
-	max-height:100vh;
-	padding: 0% 2%;
-}
-
 /* Tab links */
 
+.tabs {
+	padding: 0px 12px;
+}
 .tablink {
 	background-color: transparent;
 	border: none;
@@ -112,11 +107,43 @@ p {
 
 .tabcontent {
 	display: none;
-	padding: 10px 20px;
+	padding: 10px 30px;
 	height: 100%;
+	margin: 0px;
 }
 
-.pdf {
+#Home.tabcontent {
+/*	background-color: black;*/
+	display: none;
+	padding: 0px 0px !important;
+	height: 100%;
+	margin-bottom: 0px;
+	vertical-align:middle;
+}
+
+#Home.tabcontent img {
+	width: 70vw;
+}
+
+#Works .work {
+	padding-bottom: 40px;
+}
+
+#Film .film {
+	padding-bottom: 40px;
+}
+
+#portrait img {
+	margin: auto;
+	float: left;
+	height: 70vh;
+	width: auto;
+	max-width: 100vw;
+	max-height:100vh;
+	padding: 0% 2%;
+}
+
+#Resume .pdf {
 	width: 100%;
 	height: 70vh;
 }
@@ -142,6 +169,8 @@ p {
 	scrollbar-width: none;
 }
 
+
+
 .slides > div {
 	scroll-snap-align: start;
 }
@@ -150,6 +179,11 @@ p {
 	height: auto;
 	width: 55vw;
 	object-fit: contain;
+}
+
+#Film .slides img {
+	height: auto;
+	width: 640px;
 }
 
 .underline {
