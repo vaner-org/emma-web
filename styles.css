@@ -226,6 +226,11 @@ p {
 	width: 640px;
 }
 
+#Photos .slides img {
+	height: 540px;
+	width: auto;
+}
+
 
 .iframe-container {
 	position: relative;
