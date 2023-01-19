@@ -6,13 +6,13 @@ a {
 body {
 	background-color: #FCB3C0;
 	font-family: 'EB Garamond', serif;
-	padding: 0px 0px;
+	padding: 0;
 	margin: 0;
 }
 
 h1 {
 	margin: 0;
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 
 h1 span {
@@ -20,13 +20,17 @@ h1 span {
 }
 
 h2 {
-	margin:0;
+	margin-top: 0;
 	font-weight: normal;
 	font-size: 1.2em;
 }
 
+h2 span {
+	float:right
+}
+
 p {
-	font-size: 18px;
+	font-size: 1.2em;
 }
 
 /*
@@ -69,7 +73,7 @@ p {
 
 /* Responsive setup */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
 	#title {
 		display: block;
 		vertical-align: middle;
@@ -79,9 +83,14 @@ p {
 		width: 100%;
 		height: auto;
 	}
+	#portrait img {
+		float: none;
+		margin-bottom: 100px;
+		
+	}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 640px) {
 	#title {
 		display: table-cell;
 		vertical-align: middle;
@@ -91,27 +100,32 @@ p {
 		width: 100%;
 		height: auto;
 	}
+	#portrait img {
+		float:left;
+		margin-bottom: 100px;
+	}
 }
 
 #portrait img {
 	float: left;
 	height: 80vh;
-	padding: 0% 2%;
+	padding: 0 10vw;
+	margin-bottom: 100%;
 }
 
 .tabs {
-	padding: 0px 12px;
+	padding: 0 1vw;
 }
 .tablink {
 	background-color: transparent;
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 4% 4%;
+	padding: 3% 3%;
 }
 
 .tablink#home {
-	padding: 0% 0%;
+	padding: 0;
 }
 
 .tablink:hover {
@@ -127,7 +141,6 @@ p {
 }
 
 #Home.tabcontent {
-/*	background-color: black;*/
 	display: none;
 	padding: 0px 0px !important;
 	height: 100%;
@@ -139,11 +152,21 @@ p {
 	width: 70vw;
 }
 
-#Works .work {
+
+#Photos.tabcontent {
+	background-color: black;
+	color: white;
+}
+
+#Photos.tabcontent img {
+	border-radius: 4px;
+}
+
+#Works .set {
 	padding-bottom: 40px;
 }
 
-#Film .film {
+#Film .set {
 	padding-bottom: 40px;
 }
 
@@ -192,23 +215,24 @@ p {
 }
 
 .slides img {
-	width: 800px;
-	max-width: 65vw;
+	height: auto;
+	width: 720px;
+	max-width: 70vw;
 	object-fit: contain;
+	border-radius: 4px;
 }
 
 #Film .slides img {
-	height: auto;
 	width: 640px;
-	max-width: 65vw;
 }
 
 
 .iframe-container {
 	position: relative;
 	width: 640px;
-	max-width: 65vw;
+	max-width: 70vw;
  	margin: 0 auto;
+ 	
 }
 
 .iframe-container iframe {
@@ -218,6 +242,7 @@ p {
 	border: 0;
 	width: 100%;
 	height: 100%;
+	border-radius: 4px;
 }
 
 .underline {

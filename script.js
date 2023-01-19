@@ -34,7 +34,7 @@ highlightThumbnail();
 
 function openPage(pageName, elmnt, color) {
 	// Hide all elements with class="tabcontent" by default */
-	var i, tabcontent, tablinks, underline;
+	var i, tabcontent, tablinks, underline, tabimgs;
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
 		tabcontent[i].style.display = "none";
@@ -55,7 +55,27 @@ function openPage(pageName, elmnt, color) {
 	for (i = 0; i < underline.length; i++) {
 		underline[i].style.opacity = "1";
 	}
+	
+	tabimgs = document.getElementsByClassName("tabs");
+	
+	if (pageName == "Photos") {
+		document.body.style.backgroundColor = "#000000";
+		for (i = 0; i < tabimgs.length; i++) {
+			tabimgs[i].style.filter="invert(100%)";
+		}
+	} else {
+		document.body.style.backgroundColor = "#FCB3C0";
+		for (i = 0; i < tabimgs.length; i++) {
+			tabimgs[i].style.filter="none";
+		}
+	}
 }
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("home").click();
+
+document.getElementById("row").onmouseenter = function () {
+    console.log("User moused down");
+    document.getElementById("home").click();
+    return true; // Not needed, as long as you don't return false
+};
