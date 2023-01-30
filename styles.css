@@ -208,6 +208,7 @@ p {
 
 #Photos .gallery-container {
 	margin-top: 20px;
+	margin-bottom: 60px;
 }
 
 #Photos .slides img {
@@ -217,7 +218,7 @@ p {
 
 #Contact img {
 	height: auto;
-	width: 300px;
+	width: 320px;
 	max-width: 80vw;
 }
 
