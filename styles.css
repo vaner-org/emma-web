@@ -83,10 +83,9 @@ p {
 		width: 100%;
 		height: auto;
 	}
-	#portrait img {
-		float: none;
-		margin-bottom: 100px;
-		
+	
+	#portrait {
+		width: 100%;
 	}
 }
 
@@ -100,17 +99,6 @@ p {
 		width: 100%;
 		height: auto;
 	}
-	#portrait img {
-		float:left;
-		margin-bottom: 100px;
-	}
-}
-
-#portrait img {
-	float: left;
-	height: 80vh;
-	padding: 0 10vw;
-	margin-bottom: 100%;
 }
 
 .tabs {
@@ -121,7 +109,7 @@ p {
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 3% 3%;
+	padding: 4% 4%;
 }
 
 .tablink#home {
@@ -158,10 +146,6 @@ p {
 	color: white;
 }
 
-#Photos.tabcontent img {
-	border-radius: 4px;
-}
-
 #Works .set {
 	padding-bottom: 40px;
 }
@@ -171,12 +155,9 @@ p {
 }
 
 #portrait img {
-	margin: auto;
 	float: left;
-	height: 70vh;
+	height: 80vh;
 	width: auto;
-	max-width: 100vw;
-	max-height:100vh;
 	padding: 0% 2%;
 }
 
@@ -219,11 +200,14 @@ p {
 	width: 720px;
 	max-width: 70vw;
 	object-fit: contain;
-	border-radius: 4px;
 }
 
 #Film .slides img {
 	width: 640px;
+}
+
+#Photos .gallery-container {
+	margin-top: 20px;
 }
 
 #Photos .slides img {
@@ -231,6 +215,11 @@ p {
 	width: auto;
 }
 
+#Contact img {
+	height: auto;
+	width: 300px;
+	max-width: 80vw;
+}
 
 .iframe-container {
 	position: relative;
