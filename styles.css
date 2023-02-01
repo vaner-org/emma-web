@@ -73,7 +73,7 @@ p {
 
 /* Responsive setup */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-aspect-ratio: 64/60) {
 	#title {
 		display: block;
 		vertical-align: middle;
@@ -89,7 +89,7 @@ p {
 	}
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-aspect-ratio: 64/60) {
 	#title {
 		display: table-cell;
 		vertical-align: middle;
@@ -248,7 +248,9 @@ p {
 	height: 80vh;
 /*	background-color: black;*/
 	margin-left: -30px;
+	overflow-y: hidden;
 	overflow-x: hidden;
+	z-index: -1;
 }
 
 .img-div {
@@ -270,37 +272,37 @@ p {
 
 .img-div:nth-child(1) {
 	left: 0%;
-	z-index: 1;
+	z-index: -5;
 }
 
 .img-div:nth-child(2) {
 	left: 12%;
-	z-index: 2;
+	z-index: -4;
 }
 
 .img-div:nth-child(3) {
 	left: 26%;
-	z-index: 3;
+	z-index: -3;
 }
 
 .img-div:nth-child(4) {
 	left: 40%;
-	z-index: 4;
+	z-index: -2;
 }
 
 .img-div:nth-child(5) {
 	right: 26%;
-	z-index: 5;
+	z-index: -1;
 }
 
 .img-div:nth-child(6) {
 	right: 13%;
-	z-index: 2;
+	z-index: -2;
 }
 
 .img-div:nth-child(7) {
 	right: -10px;
-	z-index: 1;
+	z-index: -3;
 }
 
 @media (max-aspect-ratio: 32/13) {
