@@ -73,7 +73,7 @@ p {
 
 /* Responsive setup */
 
-@media only screen and (max-aspect-ratio: 64/60) {
+@media only screen and (max-aspect-ratio: 1/1) {
 	#title {
 		display: block;
 		vertical-align: middle;
@@ -89,7 +89,7 @@ p {
 	}
 }
 
-@media only screen and (min-aspect-ratio: 64/60) {
+@media only screen and (min-aspect-ratio: 1/1) {
 	#title {
 		display: table-cell;
 		vertical-align: middle;
