@@ -1,3 +1,5 @@
+
+
 const slideGallery = document.querySelector('.slides');
 const slides = slideGallery.querySelectorAll('div');
 const thumbnailContainer = document.querySelector('.thumbnails');
@@ -79,3 +81,26 @@ document.getElementById("row").onmouseenter = function () {
     document.getElementById("home").click();
     return true; // Not needed, as long as you don't return false
 };
+
+
+const parent = document.querySelector('#Home');
+const container = parent.querySelector('.container');
+const imgDivs = parent.querySelectorAll('.img-div');
+
+window.addEventListener('resize', () => {
+  console.log('Window resized');
+
+  if (window.innerWidth <= 500) {
+    console.log('Window width <= 500');
+
+    imgDivs.forEach((imgDiv, index) => {
+      if (index >= 2) {
+        console.log('Removing img-div');
+        container.removeChild(imgDiv);
+      }
+    });
+  } else {
+    // Add back the removed divs
+    // ...
+  }
+});
