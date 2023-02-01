@@ -1,8 +1,8 @@
 // Get the element with id="home" and click on it
-window.onload = function() {
-	console.log("Home button click code is running");
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log("Home button click code is running");
 	document.getElementById("home").click();
-}
+});
 
 const slideGallery = document.querySelector('.slides');
 const slides = slideGallery.querySelectorAll('div');
