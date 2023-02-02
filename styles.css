@@ -259,17 +259,13 @@ p {
 	z-index: -2;
 }
 
-/*.img-div:nth-child(4) img {
-	margin-left: -40px;
-}*/
-
 .img-div:nth-child(5) {
 	z-index: -1;
 }
 
-/*.img-div:nth-child(5) img {
-	margin-right: -50px;
-}*/
+.img-div:nth-child(5) img {
+	margin-right: -5vh;
+}
 
 .img-div:nth-child(6) {
 	z-index: -2;
@@ -331,10 +327,6 @@ p {
 	.img-div:nth-child(4) {
 		width: 100%
 	}
-	
-/*	.img-div:nth-child(4) img {
-		margin-left: 0;
-	}*/
 }
 
 @media only screen and (max-aspect-ratio: 1/1) {
