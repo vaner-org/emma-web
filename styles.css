@@ -73,34 +73,6 @@ p {
 
 /* Responsive setup */
 
-@media only screen and (max-aspect-ratio: 1/1) {
-	#title {
-		display: block;
-		vertical-align: middle;
-	}
-	#title img {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-	
-	#portrait {
-		width: 100%;
-	}
-}
-
-@media only screen and (min-aspect-ratio: 1/1) {
-	#title {
-		display: table-cell;
-		vertical-align: middle;
-	}
-	#title img {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-}
-
 .tabs {
 	padding: 0 1vw;
 }
@@ -126,14 +98,6 @@ p {
 	padding: 10px 30px;
 	height: 100%;
 	margin: 0px;
-}
-
-#Home .tabcontent {
-	display: none;
-	padding: 0px 0px !important;
-	height: 100%;
-	margin-bottom: 0px;
-	vertical-align: middle;
 }
 
 
@@ -238,100 +202,86 @@ p {
 }
 
 .container {
+/*	outline: 1px solid red;*/
+	z-index: -1;
+	
 	display: flex;
-/*	flex-direction: row;*/
-/*	align-items: stretch;*/
-/*	justify-content: space-between;*/
+	flex-wrap: nowrap;
+	align-items: stretch;
+	justify-content: space-between;
+
 	position: absolute;
 	bottom: 0;
 	width: 100vw;
-	height: 80vh;
-/*	background-color: black;*/
+	height: 100vh;
 	margin-left: -30px;
+	
 	overflow-y: hidden;
 	overflow-x: hidden;
-	z-index: -1;
 }
 
 .img-div {
-	padding: 0;
-	margin-bottom: 0;
-	flex: 0;
-	min-width: 180px;
-	position: absolute;
-	bottom:0
+/*	outline: 1px solid blue;*/
 	z-index: -1;
-/*	border: 1px solid red;*/
+	
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	
+	position: relative;
+	min-width: 10px;
+	margin-bottom: -5px;	
 }
 
 .img-div img {
 	width: auto;
-	height: 80vh;
+	height: calc(100vh - 100px);
 	margin-bottom: 0px;
 }
 
 .img-div:nth-child(1) {
-	left: 0%;
 	z-index: -5;
 }
 
 .img-div:nth-child(2) {
-	left: 12%;
 	z-index: -4;
 }
 
 .img-div:nth-child(3) {
-	left: 26%;
 	z-index: -3;
 }
 
+.img-div:nth-child(3) img {
+	margin-left: -10vh;
+}
+
 .img-div:nth-child(4) {
-	left: 40%;
 	z-index: -2;
 }
 
+/*.img-div:nth-child(4) img {
+	margin-left: -40px;
+}*/
+
 .img-div:nth-child(5) {
-	right: 26%;
 	z-index: -1;
 }
 
+/*.img-div:nth-child(5) img {
+	margin-right: -50px;
+}*/
+
 .img-div:nth-child(6) {
-	right: 13%;
 	z-index: -2;
 }
 
 .img-div:nth-child(7) {
-	right: -10px;
 	z-index: -3;
 }
 
 @media (max-aspect-ratio: 32/13) {
 	.img-div:nth-child(1) {
 		display: none;
-	}
-
-	.img-div:nth-child(2) {
-		left: -15px;
-	}
-
-	.img-div:nth-child(3) {
-		left: 16%;
-	}
-
-	.img-div:nth-child(4) {
-		left: 33%;
-	}
-
-	.img-div:nth-child(5) {
-		right: 26%;
-	}
-
-	.img-div:nth-child(6) {
-		right: 12%;
-	}
-
-	.img-div:nth-child(7) {
-		right: -10px;
 	}
 }
 
@@ -340,21 +290,6 @@ p {
 	.img-div:nth-child(6) {
 		display: none;
 	}
-	.img-div:nth-child(2) {
-		left: -40px;
-	}
-	.img-div:nth-child(3) {
-		left: 16%;
-	}
-	.img-div:nth-child(4) {
-		left: 35%;
-	}
-	.img-div:nth-child(5) {
-		right: 14%;
-	}
-	.img-div:nth-child(7) {
-		right: -40px;
-	}
 }
 
 @media (max-aspect-ratio: 64/38) {
@@ -362,15 +297,6 @@ p {
 	.img-div:nth-child(6),
 	.img-div:nth-child(7) {
 		display: none;
-	}
-	.img-div:nth-child(3) {
-		left: 20%;
-	}
-	.img-div:nth-child(4) {
-		left: 42%;
-	}
-	.img-div:nth-child(5) {
-		right: -20px;
 	}
 }
 
@@ -381,12 +307,6 @@ p {
 	.img-div:nth-child(7) {
 		display: none;
 	}
-	.img-div:nth-child(3) {
-		left: -30px;
-	}
-	.img-div:nth-child(4) {
-		left: 24%;
-	}
 }
 
 @media (max-aspect-ratio: 64/60) {
@@ -396,12 +316,6 @@ p {
 	.img-div:nth-child(6),
 	.img-div:nth-child(7) {
 		display: none;
-	}
-	.img-div:nth-child(4) {
-		left: 5%;
-	}
-	.img-div:nth-child(6) {
-		right: 20%;
 	}
 }
 
@@ -415,6 +329,46 @@ p {
 		display: none;
 	}
 	.img-div:nth-child(4) {
-		left: 8%;
+		width: 100%
+	}
+	
+/*	.img-div:nth-child(4) img {
+		margin-left: 0;
+	}*/
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+	#title {
+		display: block;
+		vertical-align: middle;
+	}
+	#title img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	
+	#portrait {
+		width: 100%;
+	}
+	.img-div img {
+		height: calc(100vh - 30vw);
+	}
+	
+}
+
+@media only screen and (min-aspect-ratio: 1/1) {
+	#title {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#title img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	
+	.img-div img {
+		height: calc(100vh - 5vw);
 	}
 }
