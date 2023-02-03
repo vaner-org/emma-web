@@ -48,8 +48,8 @@ p {
 }
 */
 
-/* Navigation bar */
 
+/* Navigation bar */
 
 .row {
 	display: table;
@@ -70,6 +70,7 @@ p {
 	width: 100%;
 	height: auto;
 }
+
 
 /* Responsive setup */
 
@@ -99,7 +100,6 @@ p {
 	height: 100%;
 	margin: 0px;
 }
-
 
 #Photos.tabcontent {
 	background-color: black;
@@ -199,6 +199,11 @@ p {
 
 .slides::-webkit-scrollbar {
 	display: auto;
+}
+
+#Home h1 {
+	text-align: center;
+	font-size: 1.4em;
 }
 
 .container {
@@ -321,9 +326,6 @@ p {
 	
 	.img-div:nth-child(4) img {
 		margin-left: 5vw;
-	}
-	.img-div:nth-child(5) {
-		justify-content: start;
 	}
 	
 	.img-div:nth-child(5) img {
