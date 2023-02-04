@@ -106,13 +106,6 @@ p {
 	color: white;
 }
 
-#portrait img {
-	float: left;
-	height: 80vh;
-	width: auto;
-	padding: 0% 2%;
-}
-
 #Resume .pdf {
 	width: 100%;
 	height: 70vh;
@@ -204,6 +197,36 @@ p {
 #Home h1 {
 	text-align: center;
 	font-size: 1.4em;
+}
+
+.box {
+/*	outline: 2px solid red;*/
+	
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	justify-content: space-between;
+
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	gap: 30px;
+}
+
+.thing {
+/*	outline: 1px solid blue;*/
+	display: flex;
+	width: auto;
+	height: 100%;
+	position: relative;
+	align-self: flex-start;
+}
+
+.thing img {
+	width: auto;
+	height: calc(50vh + 15vw);
+	margin-bottom: 0px;
+	flex-shrink: 0;
 }
 
 .container {
@@ -347,6 +370,18 @@ p {
 	}
 }
 
+#portrait {
+	float: left;
+	width: 40vw;
+	height: 80vw;
+}
+
+#portrait img {
+	height: auto;
+	width: 100%;
+	padding: 0% 4%;
+}
+
 @media only screen and (max-aspect-ratio: 1/1) {
 	#title {
 		display: block;
@@ -359,7 +394,7 @@ p {
 	}
 	
 	#portrait {
-		width: 100%;
+		width: 100vw;
 	}
 	.img-div img {
 		height: calc(100vh - 30vw);
