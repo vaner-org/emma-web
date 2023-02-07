@@ -278,10 +278,6 @@ p {
 	z-index: -3;
 }
 
-.img-div:nth-child(3) img {
-	margin-left: -10vh;
-}
-
 .img-div:nth-child(4) {
 	z-index: -2;
 }
