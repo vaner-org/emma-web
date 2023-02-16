@@ -169,6 +169,18 @@ p {
 	max-width: 80vw;
 }
 
+#Contact .float-bottom-right {
+	float: right;
+	position: fixed;
+	right: 40px;
+	bottom: 20px;
+}
+
+#Contact .float-bottom-right img {
+	width: auto;
+	height: 30vh;
+}
+
 .iframe-container {
 	position: relative;
 	width: 640px;
@@ -335,6 +347,10 @@ p {
 	.img-div:nth-child(6),
 	.img-div:nth-child(7) {
 		display: none;
+	}
+	
+	.img-div:nth-child(3) img {
+		margin-left: 2vw;
 	}
 }
 
