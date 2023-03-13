@@ -92,7 +92,7 @@ p {
 #Resume .pdf {
 	width: 100%;
 	height: 68vh;
-	padding-bottom: 30px;
+	padding-bottom: 26px;
 }
 
 
@@ -159,21 +159,23 @@ p {
 	display: block;
 	height: 96px;
 	width: auto;
-	max-height: 15vw;
+	max-height: 20vw;
 }
 
 #Contact .float-bottom-right {
 	display: flex;
 	align-items: flex-end;
-	float: right;
+	white-space: nowrap;
+    overflow: auto;
 	position: fixed;
 	right: 30px;
 	bottom: 20px;
 }
 
 #Contact .float-bottom-right img {
+	height: 36vh;
 	width: auto;
-	height: 40vh;
+	max-height: 30vw;
 }
 
 .iframe-container {
@@ -218,6 +220,15 @@ p {
 	width: 100%;
 	height: 80vh;
 	gap: 30px;
+}
+
+.footer {
+	margin-top: -30px;
+	padding: 0;
+}
+
+.footer p {
+	float: right;
 }
 
 .thing {
