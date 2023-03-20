@@ -282,6 +282,7 @@ p {
 .img-div img {
 	width: auto;
 	height: calc(100vh - 100px);
+	height: calc(calc(var(--vh, 1vh) * 100) - 100px);
 	margin-bottom: 0px;
 }
 
@@ -386,7 +387,7 @@ p {
 	}
 }
 
-@media (max-aspect-ratio: 16/20) {
+@media (max-aspect-ratio: 15/20) {
 	.img-div:nth-child(1),
 	.img-div:nth-child(2),
 	.img-div:nth-child(3),

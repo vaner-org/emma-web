@@ -4,6 +4,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	document.getElementById("home").click();
 });
 
+function appHeight() {
+  const doc = document.documentElement;
+  doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
+}
+
+window.addEventListener('resize', appHeight);
+appHeight();
+
 const slideGallery = document.querySelector('.slides');
 const slides = slideGallery.querySelectorAll('div');
 const thumbnailContainer = document.querySelector('.thumbnails');
