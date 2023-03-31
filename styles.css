@@ -282,7 +282,6 @@ p {
 .img-div img {
 	width: auto;
 	height: calc(100vh - 100px);
-	height: calc(calc(var(--vh, 1vh) * 100) - 100px);
 	margin-bottom: 0px;
 }
 
@@ -429,6 +428,7 @@ p {
 	}
 	.img-div img {
 		height: calc(100vh - 30vw);
+		height: calc(calc(var(--vh, 1vh) * 100) - 30vw);
 	}
 	
 	.box {
@@ -450,6 +450,7 @@ p {
 	
 	.img-div img {
 		height: calc(100vh - 5vw);
+		height: calc(calc(var(--vh, 1vh) * 100) - 5vh);
 	}
 }
 
