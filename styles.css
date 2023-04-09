@@ -134,13 +134,20 @@ p {
 	object-fit: contain;
 }
 
+#Works .slides img {
+	height: 540px;
+	max-height: 80vh;
+	width: auto;
+	max-width: none;
+}
+
 #Film .slides img {
 	width: 640px;
 }
 
 #Photos .slides img {
 	height: 540px;
-	max-height: 80vw;
+	max-height: 80vh;
 	width: auto;
 	max-width: none;
 }
